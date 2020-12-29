@@ -1,5 +1,5 @@
 {
-  "name": "rust-ts-template",
+  "name": "{{project-name}}",
   "version": "0.0.1",
   "main": "index.js",
   "author": "Carson McKinstry <carson.mckinstry@gmail.com>",
@@ -23,6 +23,6 @@
     "test": "yarn test"
   },
   "dependencies": {
-    "rust-ts-template": "./pkg"
+    "{{project-name}}": "./pkg"
   }
 }

@@ -1,4 +1,4 @@
-import * as wasm from "rust-ts-template";
+import * as wasm from "{{project-name}}";
 
 export const main = async () => {
   console.log("Hello from main");
