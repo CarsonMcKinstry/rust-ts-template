@@ -1,5 +1,5 @@
 {
-  "name": "{{project-name}}",
+  "name": "{{project-name}}-web",
   "version": "0.0.1",
   "main": "index.js",
   "author": "Carson McKinstry <carson.mckinstry@gmail.com>",
