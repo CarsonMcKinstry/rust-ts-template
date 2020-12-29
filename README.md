@@ -13,17 +13,25 @@ This is a highly opinionated template for writing projects using TypeScript and 
 
 ## Usage
 
-### commands
+### Commands Available via `yarn`
 
-Yarn Commands:
-
-- `yarn build` - builds your rust package, adds it to the npm dependencies, and builds the application using webpack
-- `yarn dev` - does two things:
+- `yarn build`: builds your rust package, adds it to the npm dependencies, and builds the application using webpack
+- `yarn dev`: does two things:
   - starts a `nodemon` process that watches your rust files, and automatically re-adds the package to the npm dependencies
   - starts a the `webpack-dev-server`
-- `yarn test` - run jest to test TypeScript files
+- `yarn test`: run jest to test TypeScript files
 
-Rust Commands:
+### Commands Available via `wasm-pack`
 
-- `wasm-pack build` - builds your rust package
-- `wasm-pack test --headless --firefox` - test your rust code in a headless browser
+- `wasm-pack build`: builds your rust package
+- `wasm-pack test --headless --firefox`: test your rust code in a headless browser
+
+### Use `cargo generate` to Clone this Template
+
+[Learn more about `cargo generate` here.](https://github.com/ashleygwilliams/cargo-generate)
+
+```
+cargo generate --git https://github.com/CarsonMcKinstry/rust-ts-template.git --name my-project
+cd my-project
+yarn install
+```
