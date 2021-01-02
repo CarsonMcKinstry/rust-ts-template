@@ -16,13 +16,12 @@
     "webpack-dev-server": "^3.11.1"
   },
   "scripts": {
-    "prebuild": "wasm-pack build; yarn add ./pkg",
+    "prebuild": "wasm-pack build",
     "build": "webpack --config webpack.config.js",
-    "dev": "yarn watch:rs & webpack serve",
+    "dev": "yarn watch:rs & yarn watch:js",
+    "watch:js": "webpack serve",
     "watch:rs": "nodemon --exec yarn prebuild -e rs",
     "test": "yarn test"
   },
-  "dependencies": {
-    "{{project-name}}": "./pkg"
-  }
+  "dependencies": {}
 }

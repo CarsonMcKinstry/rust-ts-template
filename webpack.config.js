@@ -19,7 +19,10 @@ const mod = {
 }
 
 const resolve = {
-    extensions: ['.ts', '.js']
+    extensions: ['.ts', '.js'],
+    alias: {
+        "@wasm": path.resolve(__dirname, 'pkg')
+    }
 };
 
 const plugins = [
