@@ -31,7 +31,7 @@ This is a highly opinionated template for writing projects using TypeScript and 
 [Learn more about `cargo generate` here.](https://github.com/ashleygwilliams/cargo-generate)
 
 ```
-cargo generate --git https://github.com/CarsonMcKinstry/rust-ts-template.git --name my-project
+cargo generate --git https://github.com/CarsonMcKinstry/rust-ts-template.git --branch main --name my-project
 cd my-project
 yarn install
 ```
